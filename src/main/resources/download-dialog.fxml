@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<DialogPane prefHeight="128.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <graphic>
+      <ImageView fx:id="image" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-question-mark-48.png" />
+         </image>
+      </ImageView>
+   </graphic>
+   <buttonTypes>
+      <ButtonType fx:constant="CANCEL" />
+   </buttonTypes>
+   <content>
+      <VBox prefHeight="81.0" prefWidth="392.0" spacing="5.0">
+         <children>
+            <Label fx:id="gameNameLabel" text="Preparing download..." />
+            <ProgressBar fx:id="progressBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="21.0" prefWidth="372.0" progress="0.0" />
+            <Label fx:id="percentLabel" text="0% ?/? GB" />
+         </children>
+      </VBox>
+   </content>
+</DialogPane>
