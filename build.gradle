@@ -32,9 +32,8 @@ dependencies {
     implementation 'net.java.dev.jna:jna:5.8.0'
     implementation 'net.java.dev.jna:jna-platform:5.8.0'
     implementation files('libs/jiconextract.jar')
-    implementation 'ch.qos.logback:logback-core:1.2.3'
-    implementation 'ch.qos.logback:logback-classic:1.2.3'
-    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.slf4j:slf4j-api:1.7.31'
+    implementation 'org.slf4j:slf4j-simple:1.7.31'
 }
 
-mainClassName = 'io.jryan.lan.steam.SteamLanPartyApplication'
+mainClassName = 'io.jryan.lan.steam.SteamGameTransferApplication'
